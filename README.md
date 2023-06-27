@@ -2,6 +2,19 @@
 
 Simple Kotlin / Spring / Cassandra API for storing & serving page view data without tracking the users. Proof of concept.
 
+## Development
+
+`mvn clean && mvn spring-boot-run`
+
+## Build
+
+Build Docker image:
+
+`docker-compose build`
+
+Run Docker image:
+
+`docker-compose up`
 
 ## Whats in the name
 
