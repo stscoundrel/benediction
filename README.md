@@ -1,15 +1,8 @@
-# Kotlin template
+# Benediction
 
-Template for Kotlin/Maven library with CI/CD & Dependabot updates.
+Simple Kotlin / Spring / Cassandra API for storing & serving page view data without tracking the users. Proof of concept.
 
-## Install
 
-As Maven dependency.
+## Whats in the name
 
-```xml
-<dependency>
-  <groupId>io.github.stscoundrel</groupId>
-  <artifactId>kotlin-template</artifactId>
-  <version>0.1.0</version> <!-- Note! Check latest release number -->
-</dependency>
-```
+A benediction is a short invocation for divine help, blessing and guidance. Divine help is what one might need should they wish to do analytics without GDPR acceptances.
