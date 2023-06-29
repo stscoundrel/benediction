@@ -8,11 +8,15 @@ Simple Kotlin / Spring / Cassandra API for storing & serving page view data with
 
 ## Build
 
-Build Docker image:
+Build App Docker image:
 
 `docker-compose build`
 
-Run Docker image:
+Setup Cassandra DB:
+
+`sh scripts/setup-db.sh`
+
+Run app & DB:
 
 `docker-compose up`
 
