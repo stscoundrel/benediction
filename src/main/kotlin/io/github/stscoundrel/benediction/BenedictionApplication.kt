@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class BenedictionApplication
 
 fun main(args: Array<String>) {
-	runApplication<BenedictionApplication>(*args)
+    runApplication<BenedictionApplication>(*args)
 }

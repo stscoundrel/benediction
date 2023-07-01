@@ -4,7 +4,7 @@ Simple Kotlin / Spring / Cassandra API for storing & serving page view data with
 
 ## Development
 
-`mvn clean && mvn spring-boot-run`
+`mvn clean && mvn spring-boot:run`
 
 ## Build
 
