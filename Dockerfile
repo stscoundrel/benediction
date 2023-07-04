@@ -14,4 +14,4 @@ RUN mvn clean package
 EXPOSE 8080
 
 # Specify the command to run the application
-CMD ["java", "-jar", "target/revalidator-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/benediction-0.0.1-SNAPSHOT.jar"]
