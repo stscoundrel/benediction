@@ -9,6 +9,11 @@ services:
       - ./db:/db
       - ./cassandra-data:/var/lib/cassandra
     command: ["cassandra", "-f"]
+    healthcheck:
+      test: ["CMD-SHELL", "[ $$(nodetool statusgossip) = running ]"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
     networks:
       - app-network
   app:
@@ -19,6 +24,9 @@ services:
       - 8080:8080
     networks:
       - app-network
+    depends_on:
+      cassandra:
+        condition: service_healthy
 
 networks:
   app-network:
