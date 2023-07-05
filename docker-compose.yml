@@ -24,6 +24,10 @@ services:
       - 8080:8080
     networks:
       - app-network
+    environment:
+      - CASSANDRA_CONTACT_POINTS=cassandra
+      - CASSANDRA_PORT=9042
+      - CASSANDRA_KEYSPACE=benediction_keyspace
     depends_on:
       cassandra:
         condition: service_healthy
