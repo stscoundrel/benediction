@@ -1,6 +1,8 @@
 # Benediction
 
-Simple Kotlin / Spring / Cassandra API for storing & serving page view data without tracking the users. Proof of concept.
+Simple Kotlin / Spring / Cassandra API for storing & serving page view data without tracking the users.
+
+Proof of concept for personal use. Mainly stores event data & allows queries by projects & time intervals. As far as "tracking" portion is concerned, the data model includes `user_identifier` which may or may not be used. Benediction trusts that the calling client either uses GDRP approved identifier (=hash that can't be turned back to personal data).
 
 ## Development
 
