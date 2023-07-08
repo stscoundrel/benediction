@@ -22,6 +22,10 @@ Run app & DB:
 
 `docker-compose up`
 
+## Generate test data for queries
+
+Should you wish to automatically populate your DB with event data, see [Benediction Ritual](https://github.com/stscoundrel/benediction-ritual)
+
 ## Whats in the name
 
 A benediction is a short invocation for divine help, blessing and guidance. Divine help is what one might need should they wish to do analytics without GDPR acceptances.
