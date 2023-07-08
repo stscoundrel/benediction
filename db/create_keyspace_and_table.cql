@@ -3,10 +3,10 @@ CREATE KEYSPACE IF NOT EXISTS benediction_keyspace WITH replication = {'class':'
 USE benediction_keyspace;
 
 CREATE TABLE IF NOT EXISTS events (
-  timestamp TIMESTAMP,
   project_name TEXT,
+  timestamp TIMESTAMP,
   id UUID,
   path TEXT,
   user_identifier TEXT,
-  PRIMARY KEY ((timestamp, project_name), id)
+  PRIMARY KEY ((project_name), timestamp, id)
 );
